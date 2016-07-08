@@ -1,0 +1,139 @@
+@import url(http://www.hurstcreative.com/codepen/calculator/getdigital.ttf);
+
+@font-face {
+  font-family: 'getdigital';
+  src: url("http://www.hurstcreative.com/codepen/calculator/getdigital.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: bold 14px Arial, sans-serif;
+}
+html {
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #ccc 20%, #aaa);
+	background-size: cover;
+}
+#calculator {
+	width: 325px;
+	height: auto;
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 4px #999, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.top span.clear {
+	float: left;
+	border-radius: 10px;
+}
+.top .result {
+	height: 60px;
+	width: 212px;
+	float: right;
+	padding: 0 10px;
+	background: #EEE;
+	border-radius: 10px;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	color: #000;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+	border-radius: 10px;
+}
+.result > p {
+  margin: 20px 15px;
+  font-family: 'getdigital';
+  font-size: 25px;
+}
+.keys, .top {overflow: hidden;}
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	top: 0;
+	font-size: 18px;
+	cursor: pointer;
+	width: 66px;
+	height: 60px;
+	background: #333;
+	border-radius: 10px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	margin: 0 7px 11px 0;
+	color: #fff;
+	line-height: 66px;
+	text-align: center;
+	user-select: none;
+	transition: all 0.2s ease;
+}
+.keys span {
+	background-image:url(http://www.hurstcreative.com/codepen/calculator/btn.jpg);
+	box-shadow: 0px 4px rgba(52, 4, 9, 0.5);
+	color: #fff;
+	font-size:24px;
+	border-radius: 10px;
+}
+.keys span.operator {
+	background-image:url(http://www.hurstcreative.com/codepen/calculator/btn2.jpg);
+	margin-right: 0;
+	box-shadow: 0px 4px #999;
+	color: #fff;
+}
+.keys span.equal {
+	background-image:url(http://www.hurstcreative.com/codepen/calculator/btn3.jpg);
+	box-shadow: 0px 4px #999;
+	color: #fff;
+}
+.top span.clear {
+	background-image:url(http://www.hurstcreative.com/codepen/calculator/btn4.jpg);
+	box-shadow: 0px 4px #999;
+	color: #fff;
+}
+.keys span:active {
+	opacity: 1;
+	box-shadow: 0px 0px #333;
+	top: 4px;
+}
+.keys span.equal:active {
+	opacity: 1;
+	box-shadow: 0px 0px #333;
+	top: 4px;
+}
+
+.top span.clear:active {
+	opacity: 1;
+	top: 4px;
+	box-shadow: 0px 0px #333;
+}
+.fade {
+   opacity: 1;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out
+}
+.fade:hover {
+   opacity: 0.5
+}
+#footer {
+	width: 280px;
+	height: 20px;
+	margin: 0 auto;
+}
+#footer p {
+	margin-top:10px;
+	font-size:10px;
+	color: #999;
+}
+#footer a {
+	font-size:10px;
+	opacity: 0.5;
+}
+.text-center {
+	text-align:center;
+}
+a {
+	color: #6a0a15;
+	text-decoration:none;
+}
